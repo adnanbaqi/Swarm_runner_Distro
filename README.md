@@ -73,6 +73,38 @@ We welcome contributions from the community. If you'd like to contribute to the 
 
 5. Open a pull request on the main repository.
 
+
+## Human-Error
+In case if you get a "Unrecogonised Argument" error
+
+    ```run_server.py: error: unrecognized arguments: black sheep have you any wool
+       Traceback (most recent call last):
+       File "C:\Users\ADNANB~1\AppData\Local\Temp\Client_runner.py", line 495, in <module>
+       run_petals_server(server_options[server_option])
+       File "C:\Users\ADNANB~1\AppData\Local\Temp\Client_runner.py", line 347, in run_petals_server
+       run_command(command)
+       File "C:\Users\ADNANB~1\AppData\Local\Temp\Client_runner.py", line 13, in run_command
+       subprocess.run(command, shell=True, check=True)
+       File "C:\Users\Adnan Baqi\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 524, in run
+       raise CalledProcessError(retcode, process.args,
+       subprocess.CalledProcessError: Command 'wsl python -m petals.cli.run_server petals-team/StableBeluga2 --public_name baba black sheep have you any wool --initial_peers /ip4/45.79.153.218/tcp/31337/p2p/QmXfANcrDYnt5LTXKwtBP5nsTMLQdgxJHbK3L1hZdFN8km --public_ip 
+       xxx.xxx.xxx --port xxxxx' returned non-zero exit status 2.```
+
+
+1. Try not to add spaces between your name
+
+   ```bash
+   --public_name baba black sheep have you any wool
+   ```
+
+2. Replace the spaces in the `--public_name` argument with underscores and add your name. For example, change:
+
+   ```bash
+   --public_name baba_black_sheep_have_you_any_wool
+   ```
+
+This way, you've added your name in the correct format.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
