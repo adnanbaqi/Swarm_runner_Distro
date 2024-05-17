@@ -3,7 +3,7 @@
 
 ## Overview
 
-Welcome to Swarm Runner, a tool designed to facilitate joining the Metex private swarm by providing GPU support to the network. This application is publicly available for everyone interested in contributing their GPU resources to the Metex swarm.
+Welcome to Swarm Runner, a tool designed to facilitate joining the Immutable AI private swarm by providing GPU support to the network. This application is publicly available for everyone interested in contributing their GPU resources to the Metex swarm.
 
 ## Getting Started
 
